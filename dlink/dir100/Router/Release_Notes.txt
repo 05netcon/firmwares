@@ -1,0 +1,152 @@
+v2.03ENB12(EN)
+	1. Fix invalid 1st IP address problem of Firewall & DMZ web page.
+
+v2.03ENB11(EN)
+	1. Change the mac clone UI to be compatible with DIR-300.
+
+v2.03ENB10(EN)
+	1. Fix no route to DNS in Dynamic Russian PPTP mode when DHCP option 121 presented.
+
+v2.03ENB09(EN)
+	Do not save setting with PPPoE DA mode
+
+v2.03ENB08(EN)
+	Settings in Remote Management are not saved in Internet Explorer 6 SP3
+
+v2.03ENB07(EN)
+	Change the accepted minimum lease time of DHCP client to 10 seconds.
+
+v2.03ENB06(EN)
+	1. Fixed the DIR-100 automatically reboot every 1 minute when connection with DI-804 HV.
+	2. Modify the DNS issue, when first DNS server response Refused, the device connect to second DNS server
+
+v2.03ENB05(EN)
+	When device reboot, receive the ARP packet form LAN
+
+V2.03b04(EN)
+	Firewall issue: the PC can’t ping when set the firewall rule “allow all Protocol”Firewall issue: the PC can’t ping when set the firewall rule “allow all Protocol”
+
+V2.03b04(EN)
+	MTU Issue with disabled NAT, PC cannot visit http://194.67.57.20 (web site of mail.ru) MTU Issue with disabled NAT, PC cannot visit http://194.67.57.20 (web site of mail.ru) 
+
+V2.03b02(EN)
+	Fix the H.225 issue for RussiaFix the H.225 issue for Russia
+
+V2.03b01(EN)
+	1.Modify “version.htm” to follow Hidden Page Spec v1.04
+                2.Fix Routing issue with pptp/pptp dual access, subnet mask should be 255.255.255.255
+
+V2.02b13(EN)
+	Fix the PPTP connection fail when NAT disabled
+
+V2.02b12(EN)
+	Fix multicast issue: DIR-100 B1 duplicate the multicast packets at Wan sitemulticast issue: DIR-100 B1 duplicate the multicast packets at Wan site
+
+V2.02b11(EN)
+       QRS issue: Fix the WanSettings test fail issueQRS issue: Fix the WanSettings test fail issue
+
+V2.02b10(EN)
+       Fix the DIR-100: Unable to add route entry issue
+
+V2.02b09(EN)
+        Modify the port forwarding UI check
+
+V2.02b08(EN)
+        FIX DIR-100 B1 port forwarding and web issue, DIR-100 unable establish PPTP connection when set port forwarding
+        Add the HNAP protocol v1.1 function for QRS test
+
+V2.02b07(EN)
+        FIX DIR-100 B1V2.02B06 has some WEB blank issues when click "reboot", "Restore Device", "DHCP Renew" below "STATUS" in DCP mode or "Connect" below 
+        "STATUS" in PPTP mode, this version fix the issue
+
+V2.02b06(EN)
+        Fix the IP can not set xxx.xxx.xxx.255 issue.
+        Fix the DIR-100 Firewall security issue, ICMP protocol still could connect to the internet since  selected "ALL" in protocol item
+
+V2.02b04(EN)
+        Fix Alpha lab report v201b9 bugs.(fixed items below list) 20?23?24?25?26?27?28?33?34?38 Those items are about webpage issues.
+        Fix DIR-100 B1 IP can not set xxx.xxx.xxx.255 issue
+
+V2.02b03(EN)
+        Fix RTSP transfer performance
+
+V2.02b02(EN)
+        Fix DIR-100 PPTP connection problem with FQDN
+V2.01b9(EN)
+	The checkbox of "Enable Daylight Saving" is disabled if set time zone GDM +3:00 (Moscow,St.Petersburg,Volgograd).
+	It showed wrong time on GMT +6:00 Almaty, Novosibirsk TIME ZONE.
+
+V2.01b8(EN)
+	Web remote management connection fail
+	Modify the rules of subnet check.
+	DIR-100B1 has problem to establish PPTP connection with DI-804HV
+
+V2.01b7(EN)
+	DIR-100 B1 PPTP drop issue when use FTP download--- From Russia  
+
+V2.01b6(EN)
+	DIR-100 B1 has problem when renew DHCP IP on Dual PPTP mode
+	DIR-100B1 has problem to establish PPTP connection with DI-804HV
+	Parental control rules issue
+
+V2.01b5(EN)
+	PPTP connection fail when renew DHCP IP on Dual PPTP mode
+
+V2.01b4(EN)
+	1. Add hidden page(version.txt)
+
+V2.01b3(EN)
+	Modify Advanced Port Forwarding Rules
+	Fix the device get DHCPs DNS after 'DHCP renew'
+	Fix the device should sent packets through pptp
+
+V2.01b2(EN)
+	Modify URL filter rule again and add URL block page
+
+V2.01b1(EN)
+	Modify URL filter rule as the whole URL
+
+V2.01(EN)
+	fix the PARENTAL CONTROL RULES when ALLOW computers access to ONLY sites
+
+V2.00b08(EN)
+	add Super DMZ function
+	add WOL function
+
+V2.00b07(EN)
+	Fix the Domain input of Server IP at PPTP mode after factory reset
+
+V2.00b06(EN)
+	Fix the Domain input of Server IP at PPTP mode and L2TP mode issue when DNS and WAN site not the same subnet
+
+V2.00b05(EN)
+	Add the Domain input of Server IP at PPTP mode and L2TP mode
+
+V2.00b04(EN)
+	Fix item:
+	fix the bugs at bug report RG-10(DIR-100)B1_v200b4_TestReport_20070911
+	add QRS(HNAP)
+	add firmware upgrade as D-Link Router Firmware Version 1.03
+
+V2.00b03(EN)
+	PC located in DMZ recivies strange packets from PPTP server
+	alert error when change password.
+	Remote Managment from WAN-PHY doesn't work if device configured as DualAccessPPTP/DualAccessPPPoE
+	Device doesn't check for maches between VirtualServers and RemoteManagment ports
+	Connect on Demand in DualAccessPPTP doesn't work
+
+
+V2.00b02(EN)
+	Add new D-Link DDNS, dyndns free DDNS, dyndns Customer DDNS, dyndns Static DDNS. 
+	Modify DDNS Account Testing function
+
+V2.00b01(EN)
+	Add Russia PPTP webpage
+
+V2.00(EN)
+	Add NAT enable/disable
+	Add Dual Wan function
+	3PPPoE
+	4PPTP
+	L2tp
+

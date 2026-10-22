@@ -1,0 +1,43 @@
+<!--
+Copyright (c) 1999, 2000, 2001, 2002 by cisco Systems, Inc.
+-->
+<HTML>
+<HEAD>
+<TITLE>Cisco Cluster Management Suite</TITLE>
+</HEAD>
+
+<BODY onhelp="doNothing()">
+<SCRIPT>
+function doNothing () {
+        event.returnValue = false;
+}
+</SCRIPT>
+ 
+<OBJECT classid="clsid:8AD9C840-044E-11D1-B3E9-00805F499D93" 
+    WIDTH = 100% HEIGHT = 100%  
+	 codebase="ftp://ftp.cisco.com/cisco/netmgmt/java/j2re1-3-0-win.exe">
+    
+    <PARAM NAME=CODE VALUE="cisco/dsbu/cms/boot/internal/BootstrapApplet.class" >
+    <PARAM NAME="cache_option" VALUE="Plugin">
+    <PARAM NAME="cache_archive" VALUE="cms_boot.jar">
+    <PARAM NAME="type" VALUE="application/x-java-applet;version=1.3">
+
+    <PARAM NAME="delegate" VALUE="cisco.dsbu.cms.main.CMS">
+
+<COMMENT>
+<EMBED type="application/x-java-applet;version=1.3" 
+    java_CODE = "cisco/dsbu/cms/boot/internal/BootstrapApplet.class" 
+    cache_option="Plugin"
+    cache_archive="cms_boot.jar"
+    delegate="cisco.dsbu.cms.main.CMS"
+    WIDTH = 100% HEIGHT = 100%   
+    pluginspage="http://www.cisco.com/pcgi-bin/tablebuild.pl/java">
+<NOEMBED>
+</COMMENT>
+<CENTER>CMS cannot launch because there is no Java plugin present.</CENTER>
+</NOEMBED></EMBED>
+</OBJECT>
+
+
+</BODY>
+</HTML>

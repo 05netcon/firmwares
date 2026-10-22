@@ -1,0 +1,1106 @@
+V702R101C018
+ADD|recommended FW
+
+V702R101C015B016
+ADD|CRM20250307028380 add ability to configure several hosts under one DHCP Server pool
+
+V702R101C015B008
+ADD|CRM20250410029443 add OIDs 1.3.6.1.4.1.40418.7.100.1.(108-110) for switch reloading by timer
+
+V702R101C015B007
+FIX|CRM20250609031436 issue with incorrect removal of DACL after client authentication ended
+FIX|CRM20250625031935 issue with RADIUS resource exhaustion in some cases
+
+V702R101C015B005
+FIX|CRM20250523030921 issue with SNMP does not set "ip dhcp snooping trust" on port with specific OID '.1.3.6.1.4.1.40418.7.100.13.3.17.1.4' when specific commands are enabled in some cases
+
+V702R101C015B004
+FIX|CRM20250423030017 add a troubleshooting command for R&D
+
+V702R101C015
+ADD|recommended FW
+
+V702R101C014B012
+ADD|CRM20250114027245 add commands to show ARP Inspection statistic
+
+V702R101C014B011
+FIX|CRM20250228028204 issue with incorrect work of OIDs for port-isolation (branch .1.3.6.1.4.1.40418.7.100.43)
+FIX|CRM20250411029502 add support of 'Disconnect-Request' messages from server to forcibly disconnect users + add command "dot1x send-muticast-request" to trigger user's auth after they was forcibly disconnected
+FIX|CRM20250506030373 issue with replacing VLAN MAC with VLAN CPU in option of DHCP messages
+
+V702R101C014B006
+FIX|CRM20250205027607 some little changes with web interface iteractions
+
+V702R101C014B004
+ADD|CRM20250307028379 add SNMP OIDs to get port utilization statistic in bits per second in directions IN/OUT for 5 seconds/5 minutes in OID branch 1.3.6.1.4.1.40418.7.100.3.2.1 (priPortEntry)
+
+V702R101C014B002
+FIX|CRM20250403029176 issue with incorrect processing logic of Policy-Map in some cases
+
+V702R101C014B001
+FIX|CRM20250318028673 issue with incorrect reading of DHCP Option 66 during the ZTP process in some cases
+
+V702R101C013B002
+ADD|CRM20241216026416 add Option 18 for IPv6 on port
+
+V702R101C013B001
+ADD|CRM20240909023576 add command 'dot1x timeout offline-detect <>' for users authenticated via 'dot1x port-method userbased standard' so that users cleared from mac-address-table after timeout when, for example, link goes down on port, otherwise MAC address stays in mac-address-table
+
+V702R101C013
+ADD|recommended FW
+
+V702R101C012B001
+FIX|CRM20250306028345 issue with authentication by MAB and dot1x configured simultaneously on port in some cases
+
+V702R101C011B015
+FIX|CRM20250221028012 issue with ARP learning when using vlan-translation
+
+V702R101C011B014
+FIX|CRM20250113027186 change values of SNMP object radiusAutServerHostAccessMode (OID 1.3.6.1.4.1.40418.7.100.10.5.5.1.6), new values: Access-mode MAB - 3, Access-mode IGMP - 4
+FIX|CRM20250122027472 issue with WEB login in some cases
+FIX|CRM20241206026090 add command 'erps node-id priority mode (standard | private)' for changing behavior ERPS NR messages according to G.8032/Y.1344 standard
+ADD|CRM20241015024461 add SCP in 'archive running-config' command
+
+V702R101C011B008
+FIX|CRM20241105024988 expand functionality of the 'default-port-config' command
+
+V702R101C011B006
+ADD|CRM20241226026773 add rule-id for ACL
+
+V702R101C011B005
+FIX|CRM20241219026531 issue with snmp community encryption in running config and community in trap messages after switch reboot
+
+V702R101C011B002
+ADD|CRM20241105024988 add command 'default-port-config' to erase port configurations (it doesn't work for any configurations on port)
+
+V702R101C010B004
+FIX|CRM20241126025791 incorrect storm-control settings via SNMP when ports are in LAG
+
+V702R101C010B003
+FIX|CRM20241028024807 add deleting of DACL from port after break of client authentication
+
+V702R101C010B002
+ADD|CRM20240125018545 add variations of ZTP operation with DHCP option 125
+
+V702R101C010
+ADD|recommended FW
+
+V702R101C009B013
+FIX|CRM20241030024874 delete captive-portal from running-config
+
+V702R101C009B011
+ADD|CRM20240910023617 add command 'logging event link-status include speed-duplex' to check speed and duplex in logs when port goes in UP state
+
+V702R101C009B010
+ADD|CRM20240611021374 add SNMP OID for NTP configuration
+
+V702R101C009B009
+ADD|CRM20240701021888 added ability to send DHCP option 82 only at certain VLANs
+
+V702R101C009B007
+FIX|CRM20240925023970 issue with traffic graphs (spikes and gaps) in different monitor systems
+
+V702R101C009B006
+FIX|CRM20240704021997 switch uses incorrect IP-address of TFTP-server during the auto-provisioning in some cases
+
+V702R101C009B004
+ADD|CRM20240910023602 add password encryption for archive command at running config
+
+V702R101C009B001
+ADD|CRM20240827023264 add ability to change syslog message format
+FIX|CRM20240715022243 issue with applying command 'ip dhcp disable' at port-range mode
+
+V702R101C009
+ADD|recommended FW 
+
+V702R101C008B029
+ADD|CRM20240506020439 add RADIUS attribute Framed-IP-address for dot1x and MAB authenticated users using the DHCP Snooping binding table
+
+V702R101C008B027
+ADD|CRM20240611021373 add command 'mac-authentication-bypass user-ip-from dhcpsnooping enable' to output IP-addresses of clients authenticated via MAB
+FIX|CRM20240715022268 change RADIUS service-type attribute in default
+
+V702R101C008B026
+FIX|CRM20240515020732 change name of button for port configuration on WEB-interface
+
+V702R101C008B025
+FIX|CRM20240705022039 issue with Dynamic ARP Inspection and broadcast arp packet
+
+V702R101C008B023
+FIX|CRM20240701021903 issue with traffic drops(and traffic peaks) on graphs in monitor systems
+
+V702R101C008B022
+FIX|CRM20240617021511 issue with ARP proxying to subnet-vlan
+FIX|CRM20240617021494 issue with incorrect packet identifier in RADIUS Accounting packet
+
+V702R101C008B020
+FIX|CRM20240520020832 issue with Dynamic ARP Inspection and isolation port
+
+V702R101C008B019
+FIX|CRM20240607021322 issue with configuration 'ip default-gateway'
+
+V702R101C008B016
+FIX|CRM20240520020833 corrected erratas in some commands at CLI
+ADD|CRM20240408019880 add ability configure different RADIUS-server for MAB and 802.1x authentication
+
+V702R101C008B015
+FIX|CRM20240422020180 add passwords encryption to the command 'show aaa config'
+FIX|CRM20240422020181 fix problem with unencrypted keys for some protocols in running-config
+
+V702R101C008B012
+ADD|CRM20240422020184 add changing of Source IP-address and Source MAC-address of IGMP packets for specific ports
+
+V702R101C008B010
+ADD|CRM20240329019691 add command 'dot1x user-ip-from dhcpsnooping enable' to output IP-addresses of clients authenticated via dot1x
+
+V702R101C008B009
+ADD|CRM20231115017016 add a possibility to download files from flash-memory using HTTP via WEB-interface (section "Device admin" -> subsection "HTTP")
+
+V702R101C008B006
+ADD|CRM20240321019521 add command to disable logs of user log-in on switch
+
+V702R101C008B004
+FIX|CRM20240329019684 change priority for PoE command 'max-power-type' between global and port configuration mode
+
+V702R101C008B003
+FIX|CRM20240228019018 issue with incorrect MAC-addresses in outputting of ARP debug in some cases
+
+V702R101C008B001
+FIX|CRM20240123018484 incorrect port-group qty
+FIX|CRM20240207018757 switch returns DDM value via SNMP from another port in some cases
+
+V702R101C008
+FIX|CRM20240117018392 issue with incorrect output of SNMP OID (dot1dStpDesignatedRoot) in some cases
+ADD|CRM20240125018544 add new PWR/DIAG LED state
+ADD|add new stable FW version
+
+V702R101C007B008
+ADD|CRM20231222017887 add OID to get information about memory in bytes (.1.3.6.1.4.1.40418.7.100.1.11.[14-16])
+
+V702R101C007B007
+FIX|CRM20240219018826 issue with forwarding ARP-packets with configured "ip dhcp snooping binding user-control" in some cases 
+
+V702R101C007B004
+FIX|CRM20240201018665 issue with configuring CFM mep-id
+
+V702R101C007B003
+FIX|CRM20240119018429 issue with MAC-address learning when using static LAG + LBD
+
+V702R101C007B002
+FIX|CRM20240117018401 issue with high utilization CPU with connecting SFP in some cases
+
+V702R101C007
+ADD|recommended FW 
+ADD|CRM20240110018224 add ports output in command 'sh port-group detail' when statis LAG is configured
+
+V702R101C006B001
+FIX|CRM20231207017553 port can't link up after 400 times of reboot
+
+V702R101C006
+ADD|recommended FW
+
+V702R101C005B024
+ADD|CRM20230919016056 add logging to the function "rate-violation" without configured any violation control method
+
+V702R101C005B023
+FIX|CRM20231220017817 modify output of 'show locked user'
+
+V702R101C005B021
+FIX|CRM20231218017740 issue with encrypting NTP authentication key with 'service password-encryption'
+
+V702R101C005B016
+FIX|CRM20231024016544 correct STP BPDU counters
+
+V702R101C005B015
+FIX|CRM20231101016703 command 'sh int ethernet <IFNAME> statistics' doesn't work
+
+V702R101C005B014
+FIX|CRM20231115017010 fix grammatical errors in text on the web-interface
+
+V702R101C005B013
+FIX|CRM20231102016715 issue with snmp index error in some cases
+
+V702R101C005B012
+FIX|CRM20231101016704 add ability to config DHCP Snooping information option for range of ports
+
+V702R101C005B011
+FIX|CRM20231024016538 changing SSH key
+
+V702R101C005B010
+FIX|CRM20231009016273 issue with lost of license after FW upgrade (SNR-S2985G-24TC HW ver. 1.0.1)
+
+V702R101C005B009
+FIX|CRM20231009016273 removed command 'ipv6 route ::/0 null0'
+
+V702R101C005B006
+ADD|CRM20230919016058 add information about Port-Channel interfaces via command 'show interface status'
+
+V702R101C005B004
+FIX|CRM20230831015756 inheriting settings from physical ports to port-channel
+
+V702R101C005B003
+ADD|CRM20230801015381 realize sending DHCP Release while switch reboot and adding option 60 to DHCP
+
+V702R101C005B002
+FIX|CRM20230830015739 issue with task 'tDhcpRcv' when receive incorrect DHCP packet
+
+V702R101C005B001
+FIX|CRM20230807015477 switch returns incorrect PoE capacity value via SNMP
+
+V702R101C005
+ADD|ADD new stable FW version
+
+V702R101C004B010
+FIX|CRM20230727015304 add to logs SSH port number
+
+V702R101C004B009
+FIX|CRM20230810015521 License loss after switch firmware upgrade from numeric format firmware to letter format firmware
+
+V702R101C004B008
+FIX|CRM20230810015517 incorrect work of the switch with the configured dhcp-client
+
+V702R101C004B007
+FIX|CRM20230731015362 issue with creating user via SNMP in some cases
+
+V702R101C004B003
+FIX|CRM20230801015371 issue with SNMPv3 user password encryption
+
+V702R101C004B002
+FIX|CRM20230726015292 doesn't transmit Radius Accept-Request encapsulating Nak-Message
+FIX|CRM20230704014987 issue with temperature output
+
+V702R101C004B001
+FIX|CRM20230707015050 issue with upgrading boot.rom with auto-provisioning if file name doesn't contain "boot.rom"
+
+V702R101C003B010
+FIX|CRM20230627014897 issue with MAC-addresses learning in VLAN after adding this VLAN
+
+V702R101C003B009
+FIX|CRM20230704014998 issues with autoprovisioning
+
+V702R101C003B008
+FIX|CRM20230620014804 issue with 'ip tftp-client source'
+
+V702R101C003B007
+FIX|CRM20230706015030 return incorrect chip value via SNMP
+FIX|CRM20230705015015 issues with description characters output via SNMP and changing description via SNMP
+
+V702R101C003B006
+ADD|CRM20230407013904 add switch import SSL certificate in new web
+FIX|CRM20230704014986 switch reboots if description contains '%'
+
+V702R101C003B004
+ADD|CRM20230309013520 add command 'local-arp enable subnet' so that switch can respond to ARPs that are not intended for it
+
+V702R101C003B003
+ADD|CRM20221220012798 add command to show md5sum
+
+7.0.3.5(R0241.0594)
+ADD|CRM20230510000001 combo negotiation feature
+
+7.0.3.5(R0241.0593)
+FIX|CRM20230410013933 issue with RADIUS + MS NPS
+FIX|CRM20230426014121 issue with mac-ip-access-list when using ICMP filter
+
+7.0.3.5(R0241.0591)
+FIX|CRM20230419014030 issue with SNMP OID for ifLastChange
+
+7.0.3.5(R0241.0588)
+FIX|CRM20230407013905 issue with tacacs local user authentication
+
+7.0.3.5(R0241.0587)
+ADD|CRM20221227012862 password encryption in debug aaa
+
+7.0.3.5(R0241.0583)
+ADD|CRM20221216012774 Switch web import SSL certificate
+ADD|CRM20221220012792 Automatic restart when the switch temperature is too low or too high
+
+7.0.3.5(R0241.0582)
+FIX|CRM20230118013034 add ability to change mac-address format for RADIUS
+
+7.0.3.5(R0241.0581)
+FIX|CRM20230214013258 PoE stop working in a certain cases
+FIX|CRM20221209012732 issue with transceiver-monitoring
+
+7.0.3.5(R0241.0580)
+FIX|CRM20221222012829 issue with rootguard output
+
+7.0.3.5(R0241.0579)
+FIX|CRM20230109012956 switch returns incorrect value of temperature by snmp
+
+7.0.3.5(R0241.0577)
+FIX|CRM20230130013073 issue with multi config access
+
+7.0.3.5(R0241.0575)
+ADD|CRM20220715011252 add CoA support
+
+7.0.3.5(R0241.0574)
+FIX|CRM20220816011607 requirements for dot1x&mab
+
+7.0.3.5(R0241.0570)
+FIX|CRM20221213012755 add ethernet-oam session state log
+
+7.0.3.5(R0241.0568)
+FIX|CRM20221130012655 issue with load running-config from command
+
+7.0.3.5(R0241.0566)
+ADD|CRM20221130012655 add SNMP-FRAMEWORK-MIB:snmpEngineID.0
+
+7.0.3.5(R0241.0565)
+ADD|CRM20221130012652 add "Lease time" field at "ip DHCP snooping binding" table
+
+7.0.3.5(R0241.0562)
+FIX|CRM20221213012753 issue with some LLDP MED tlv
+
+7.0.3.5(R0241.0558)
+FIX|CRM20221026012291 issue with bandwidth-control
+
+7.0.3.5(R0241.0556)
+FIX|CRM20221118012539 SNMP get wrong response for VLAN name
+
+7.0.3.5(R0241.0555)
+FIX|CRM20221103012380 issue with bpduguard logs output.
+
+7.0.3.5(R0241.0552)
+ADD|CRM20220816011599 add erps unprotected-instance
+
+7.0.3.5(R0241.0551)
+FIX|CRM20220929012074 issue with erps
+
+7.0.3.5(R0241.0549)
+FIX|CRM20220909011860 increased memory utilization
+
+7.0.3.5(R0241.0548)
+ADD|CRM20220725011358 add service password-encryption SHA-2 algorithm
+
+7.0.3.5(R0241.0545)
+FIX|CRM20220905011816 command 'ip dhcp disable' is not working on interface in portchannel
+
+7.0.3.5(R0241.0544)
+FIX|CRM20220901011779 issue with Auto Provisioning
+
+7.0.3.5(R0241.0543)
+ADD|CRM20220722011334 add ip source address while using tftp
+
+7.0.3.5(R0241.0540)
+FIX|CRM20220809011528 issue with repetitive dot1x authentication
+
+7.0.3.5(R0241.0539)
+FIX|CRM20220809011532 issue with LLDP field "Model Name"
+
+7.0.3.5(R0241.0538)
+ADD|CRM20220704011106 add vct shutdown mode in mib 
+
+7.0.3.5(R0241.0534)
+FIX|CRM20220719011300 issue with static ip dhcp snooping binding
+
+7.0.3.5(R0241.0532)
+FIX|CRM20220715011255 issue with ifLastChange OID
+
+7.0.3.5(R0241.0531)
+FIX|CRM20220704011114 issue with snmp radius configuration commands
+
+7.0.3.5(R0241.0530)
+FIX|CRM20220627011010 issue with dynamic vlan and IP-subnet vlan
+
+7.0.3.5(R0241.0528)
+FIX|CRM20220617010881 issue with VCT
+
+7.0.3.5(R0241.0527)
+ADD|CRM20220617010883 issue with ip dhcp snooping blocked record
+
+7.0.3.5(R0241.0526)
+ADD|CRM20220621010946 add oid for getting Vlan MAC
+FIX|CRM20220623010964 issue with option 82 toward cisco server
+
+7.0.3.5(R0241.0525)
+FIX|CRM20220606010743 switch learn MAC's in not created vlans
+
+7.0.3.5(R0241.0522)
+FIX|CRM202206161010867 issue with spanning-tree output
+
+7.0.3.5(R0241.0521)
+ADD|CRM20220518010471 ssh-server encryption-algorithms
+
+7.0.3.5(R0241.0519)
+ADD|CRM20220512010411 dhcp client enable
+
+7.0.3.5(R0241.0518)
+FIX|CRM20220516010452 Configured bandwidth does not take effect
+
+7.0.3.5(R0241.0517)
+FIX|CRM20220513010414 issue with QINQ and bpdu-tunnel user-defined-protocol
+ADD|CRM20220419009985 add oid for getting mac addresses on ports
+
+7.0.3.5(R0241.0516)
+FIX|CRM20220428010227 issue with VCT in cable status and length
+
+7.0.3.5(R0241.0514)
+FIX|CRM20220428010224 issue with default-gateway via DHCP client
+
+7.0.3.5(R0241.0512)
+FIX|CRM20220420010015 Unable to upgrade using http
+ADD|CRM20220427010205 https issue
+
+7.0.3.5(R0241.0511)
+FIX|CRM20220426010163 issue with 'show erps ring' output
+FIX|CRM20220414009934 Comment out the command line related to drop precedence
+
+7.0.3.5(R0241.0510)
+ADD|CRM20220406009854 add ability to view vlans in instance by snmp while spanning tree is not enable
+
+7.0.3.5(R0241.0507)
+ADD|CRM20220307009519 add ssh client
+
+7.0.3.5(R0241.0506)
+ADD|CRM20220321009695 add changing DHCP op 60
+FIX|CRM20220329009778 issue with high latency
+
+7.0.3.5(R0241.0504)
+FIX|CRM20220328009765 wrong time in sh users while using ssh keys
+
+7.0.3.5(R0241.0502)
+ADD|CRM20220310009555 issue with plain text password for SNMPv3 user
+
+7.0.3.5(R0241.0501)
+ADD|CRM20220207009150 add 'configure terminal' alias
+
+7.0.3.5(R0241.0499)
+ADD|CRM20220117009036 snmp lldp neighbor mac issue
+
+7.0.3.5(R0241.0497)
+ADD|CRM20211230008808 requirement for DHCP option 82 subscriber-id format vs-cisco
+
+7.0.3.5(R0241.0495)
+ADD|CRM20211203008423 add 'snmp-server fdbMacInfoTable-mib'
+FIX|CRM20211209008555 issue with isolate-group
+
+7.0.3.5(R0241.0493)
+FIX|CRM20211207008509 issue with 'authentication ip access-class'
+
+7.0.3.5(R0241.0492)
+FIX|CRM20211009007550 issue with 'show aaa authenticated-user'
+
+7.0.3.5(R0241.0491)
+FIX|CRM20211130008382 issue with 'switchport port-security violation recovery'
+
+7.0.3.5(R0241.0489)
+FIX|CRM20211123008232 issue with task ZIMI and AAA
+FIX|CRM20211118008177 high CPU load with some SNMP polls
+
+7.0.3.5(R0241.0486)
+FIX|CRM20211025007790 issue with task "Igmpsnoopingv3"
+
+7.0.3.5(R0241.0485)
+FIX|CRM20211026007823 memory leaking
+
+7.0.3.5(R0241.0480)
+FIX|CRM20211011007585 issue with temperature
+
+7.0.3.5(R0241.0479)
+FIX|CRM20211009007552 issue with '::ffff: deny by security IPv6 or ACL:FAULT'
+
+7.0.3.5(R0241.0470)
+FIX|CRM20210906007122 special characters into shell on command line
+
+7.0.3.5(R0241.0465)
+FIX|CRM20210722006645 SNR-S2985G-8T hangs up issue
+
+7.0.3.5(R0241.0464)
+FIX|CRM20210802006742 issue with dot1qVlanStaticUntaggedPorts
+
+7.0.3.5(R0241.0463)
+FIX|CRM20210721006638 issue with extended PoE tlv
+
+7.0.3.5(R0241.0462)
+FIX|CRM20210729006692 issue with STP and IPv6 traffic
+
+7.0.3.5(R0241.0460)
+FIX|CRM20210729006693 issue with copying files
+
+7.0.3.5(R0241.0459)
+FIX|CRM20210708006461 issue with MIB walk section errors
+
+7.0.3.5(R0241.0457)
+FIX|CRM20210712006555 issue with RSTP
+
+7.0.3.5(R0241.0456)
+FIX|CRM20210708006461 new SNMP OID's
+
+7.0.3.5(R0241.0455)
+FIX|CRM20210715006589 speed downgrade
+
+7.0.3.5(R0241.0454)
+FIX|CRM20210708006458 Dot1x authentication-method
+
+7.0.3.5(R0241.0453)
+FIX|CRM20210705006421 issue with user-control
+
+7.0.3.5(R0241.0451)
+FIX|CRM20210708006484 issue with 'bpdu-tunnel multi-protocol group'
+FIX|CRM20210705006415 issue with SNMP OID '1.0.8802.1.1.2.1.5.32962.1.3.3.1.2'
+
+7.0.3.5(R0241.0449)
+FIX|CRM20210705006416 shell accessibility using special characters
+FIX|CRM20210630006321 issue with 'ip dhcp snooping binding user-control' and no enough ACL resource
+
+7.0.3.5(R0241.0445)
+FIX|CRM20210520005865 issue with 'savi ipv6 check source ip-address mac-address'
+
+7.0.3.5(R0241.0443)
+FIX|CRM20210531005981 VCT issue
+
+7.0.3.5(R0241.0442)
+FIX|CRM20210517005834 issue with logging actions via web-interface 
+
+7.0.3.5(R0241.0439)
+FIX|CRM20210507005741 port-security maximum before enable the feature 
+
+7.0.3.5(R0241.0438)
+FIX|CRM20210415005437 privileged EXEC Mode Commands without confirmation
+
+7.0.3.5(R0241.0436)
+FIX|CRM20210506005717 issue with 'savi ipv6 check source ip-address mac-address'
+
+7.0.3.5(R0241.0433)
+FIX|CRM20210427005582 capture command enter shell mode
+
+7.0.3.5(R0241.0428)
+FIX|CRM20210426005580 restart does not work
+
+7.0.3.5(R0241.0427)
+FIX|CRM20210312004871 issue with SAVI
+
+7.0.3.5(R0241.0424)
+FIX|CRM20210420005493 issue with MLD query
+
+7.0.3.5(R0241.0422)
+FIX|CRM20210318004984 'clear counters','clear counters interface...' SNMP OIDs
+
+7.0.3.5(R0241.0421)
+FIX|CRM20210420005487 issue with 'ip dhcp-client 'print
+
+7.0.3.5(R0241.0415)
+FIX|CRM20210416005453 issue with 'lacp timeout short'
+
+7.0.3.5(R0241.0409)
+FIX|CRM20210407005273 issue with ip igmp snooping limit group
+
+7.0.3.5(R0241.0407)
+FIX|CRM20210316004927 Merge link flap protect
+
+7.0.3.5(R0241.0405)
+FIX|CRM20210319005000 EFMOAM must be supported on the physical port even if it is in the LAG
+FIX|CRM20210319004998 snmpwalk error
+
+7.0.3.5(R0241.0403)
+FIX|CRM20201119003297 BPDU-tunnel user-defined protocol requirements
+
+7.0.3.5(R0241.0402)
+FIX|CRM20210303004719 issue with pings more than 29592 bytes
+
+7.0.3.5(R0241.0399)
+FIX|CRM20210225004597 BPDU tunnel supports one tunnel to multiple protocols
+
+7.0.3.5(R0241.0397)
+FIX|CRM20210203004184 issue with password-encryption
+
+7.0.3.5(R0241.0396)
+FIX|CRM20210113003903 SNMP equivalent of the "authentication line {}" command
+FIX|CRM20201015002793 storm-control, speed-duplex and mls commands with port-channel
+
+7.0.3.5(R0241.0395)
+FIX|CRM20210127004141 tAAAMainTask suspending
+
+7.0.3.5(R0241.0394)
+FIX|CRM20210203004184 issue with password-encryption
+FIX|CRM20210127004144 hidden set SN 
+
+7.0.3.5(R0241.0389)
+FIX|CRM20201106003151 wrong packet type for op.37 and op.38
+
+7.0.3.5(R0241.0388)
+FIX|CRM20201202003432 issue with 'reload'	
+
+7.0.3.5(R0241.0387)
+FIX|CRM20201130003406 issue with OID erpsNodeState
+
+7.0.3.5(R0241.0386)
+FIX|CRM20201118003285 NIC_INTR_THREAD/tDMLL1Tx issue
+
+7.0.3.5(R0241.0384)
+FIX|RM20201106003158 issue with tIgmpsnoopingv3
+
+﻿7.0.3.5(R0241.0379)
+FIX|CRM20200910002346 problem with SP algorithm
+
+7.0.3.5(R0241.0378)
+FIX|CRM20200908002307 add IPv6 snooping vlan
+
+7.0.3.5(R0241.0376)
+FIX|CRM20201026002931 issue with the interface counter 'Time since last status change'
+
+7.0.3.5(R0241.0375)
+FIX|CRM20201015002787 dhcpSnoopingVlanEnable OID problem
+
+7.0.3.5(R0241.0374)
+FIX|CRM20201009002656 incorrect description of interface-id option
+
+7.0.3.5(R0241.0372)
+FIX|CRM20200929002620 wrong format of TACACS+ accounting messages
+
+7.0.3.5(R0241.0371)
+FIX|CRM20200928002604 issuse with 'ip dhcp snooping binding user-control' and ICMPv6 RA
+
+7.0.3.5(R0241.0370)
+ADD|CRM20200902002239 dhcp snooping option82 add cpumac 
+
+7.0.3.5(R0241.0369)
+FIX|CRM20200909002339 issue with LLDP OID
+
+7.0.3.5(R0241.0368)
+FIX|CRM20200825002128 Doesn't work 'ip dhcp snooping blocked record'
+
+7.0.3.5(R0241.0367)
+FIX|CRM20200812001901 skb leaking issue
+FIX|CRM20200825002130 iftype of port-channel issue
+
+7.0.3.5(R0241.0366)
+ADD|CRM20200724001658 add DNS on config mode 
+
+7.0.3.5(R0241.0361)
+FIX|CRM20200721001556 issue with https
+
+7.0.3.5(R0241.0360)
+ADD|RDM58246 ADD new OID lpbackDetecControlled
+
+7.0.3.5(R0241.0356)
+ADD|MT20200608000939 ADD two new MIB
+
+7.0.3.5(R0241.0354)
+ADD|MT9927 issue with savi and PD
+
+7.0.3.5(R0241.0353)
+FIX|20200609000958 dhcp-reply broadcasting via dhcp-relay
+
+7.0.3.5(R0241.0351)
+ADD|MT20200601000864 Loopback Detection messages format/level changed
+
+7.0.3.5(R0241.0349)
+FIX|MTMT20200525000782 issue with DHCP Snooping + Isolate-port group			
+
+7.0.3.5(R0241.0347)
+FIX|20200520000751 port security via SNMP issue	
+
+7.0.3.5(R0241.0345)
+ADD|MT10289 issue option 37 wrong format
+
+7.0.3.5(R0241.0344)
+ADD|MT10292 issue with upgrading FW via web
+
+7.0.3.5(R0241.0343)
+ADD|MT10238 issue with AM via SNMP
+
+7.0.3.5(R0241.0342)
+FIX|MT10248 incorrect deal with loopguard
+
+7.0.3.5(R0241.0340)
+FIX|critical MT10134 memory leaking issue and  authentication access-class telnet
+
+7.0.3.5(R0241.0338)
+FIX|FIX MT9896 syslog milliseconds
+
+7.0.3.5(R0241.0337)
+FIX|MT9880 zero in encrypt result in snmpv3 config
+
+7.0.3.5(R0241.0336)
+FIX|MT9827 service policy + dhcp snooping binding user-control issue
+
+7.0.3.5(R0241.0334)
+FIX|MT9662 create vty socket error
+
+7.0.3.5(R0241.0333)
+FIX|MT9645 add new command "spanning-tree agreement-check-cancel" for RSTP
+
+7.0.3.5(R0241.0332)
+ADD|MT9572 add arbitrary UDP-port for syslog
+
+7.0.3.5(R0241.0331)
+FIX|MT9674 PoE close the detect uvlo,ovlo
+
+7.0.3.5(R0241.0330)
+FIX|MT9555 Long execution of command 'virtual-cable-test' 
+
+7.0.3.5(R0241.0329)
+FIX|MT9492 issue with executed-commands
+
+7.0.3.5(R0241.0328)
+FIX|MT9477 PoE issue with Cisco AP, add commands 'power inline power-up mode high-inrush/pre-at/at/af' under port
+
+7.0.3.5(R0241.0327)
+FIX|MT9478 Issue with aaa and password-encryption
+
+7.0.3.5(R0241.0325)
+FIX|MT9211 wrong lldp format
+
+7.0.3.5(R0241.0323)
+FIX|MT9172 speed-duplex on 1G interfaces
+
+7.0.3.5(R0241.0322)
+FIX|MT9072 issue with port-security violation protect
+
+7.0.3.5(R0241.0320)
+FIX|MT8954 issue with port-security
+FIX|MT8955 issue with dhcp snooping binding user-control vlan
+
+7.0.3.5(R0241.0318)
+ADD|MT8886 mac-address-table periodic-query-time <5-3600>
+
+7.0.3.5(R0241.0317)
+FIX|MT8736 dhcp snooping stops working after running for a few days
+
+7.0.3.5(R0241.0316)
+FIX|MT8819 can't input space in GUI
+FIX|MT8838 LLDP-MIB::lldpLocPortId and LLDP-MIB::lldpLocPortIdSubtype does not match
+
+7.0.3.5(R0241.0315)
+FIX|MT8811 ddmDiagnosisIfIndex issue
+
+7.0.3.5(R0241.0313)
+FIX|MT8759 switch reload when configuring snmpv3 authPriv 3des
+
+7.0.3.5(R0241.0312)
+FIX|MT8698 'ssh dispatch run fatal' error
+
+7.0.3.5(R0241.0311)
+FIX|MT8709 LLDP PortIdSubtype issue
+FIX|MT8715 userdefine ACL cause mac-ip ACL not work
+
+7.0.3.5(R0241.0310)
+FIX|MT8709 ddmDiagnosisIfIndex shows all interfaces , set 'snmp-server ddm-electronic-hidden enable' as default
+
+7.0.3.5(R0241.0309)
+FIX|MT8680 ddmDiagnosisIfIndex shows all interfaces ,add new command 'snmp-server ddm-electronic-hidden enable'
+
+7.0.3.5(R0241.0308)
+ADD|MT8630 enable lldp globally by snmp, new OID .1.3.6.1.4.1.40418.7.100.200.1
+
+7.0.3.5(R0241.0307)
+ADD|MT8650 Extended port-security log
+
+7.0.3.5(R0241.0306)
+FIX|MT8629 Doesn't work OID lldpConfigManAddrPortsTxEnable (.1.0.8802.1.1.2.1.1.7.1.1) in standart lldp mib
+
+7.0.3.5(R0241.0305)
+ADD|MT8568 add log messages for loopback-detection and dhcpsnooping
+
+7.0.3.5(R0241.0304)
+FIX|MT8436 RADIUS attributes for bandwidth control on MAB
+FIX|MT8556 too many messages output cause ssh connection break
+
+7.0.3.5(R0241.0298)
+ADD|MT8364 DHCPv6 guard
+ADD|MT8367 authenticate the administrator via the SSH key
+ADD|MT8474 show power and show temperature
+ADD|MT8475 add logs about MAC address table status
+
+7.0.3.5(R0241.0295)
+ADD|MT8375 change default command to 'speed-duplex auto' 
+
+7.0.3.5(R0241.0293)
+FIX|MT8396 LLDP doesn't work with 'switchport discard packet untag' 
+
+7.0.3.5(R0241.0290)
+FIX|MT8425 SNMPAuthenticationFailure when logout with 'exit' via ssh 
+FIX|MT8422 can't create numerous MAC-IP ACL via snmp
+ADD|MT8423 transfer user privilege via radius server 
+ADD|MT8301 ADD vlanid OID for MAC-IP-ACl
+
+7.0.3.5(R0241.0288)
+ADD|MT8365 add new command 'capture match' to capture packets and save to flash as pcap file
+FIX|MT8301 Syntax errors in MIB (2.1.60) and no vlanId oid for MAC-IP-ACL
+
+7.0.3.5(R0241.0286)
+FIX|MT8393 SNMPAuthenticationFailure when connecting via SSH 
+
+7.0.3.5(R0241.0284)
+FIX|MT8158 memory leakage due to igmp authentication
+
+7.0.3.5(R0241.0283)
+FIX|MT8157 Problem with NFS fragmented packets
+
+7.0.3.5(R0241.0281)
+ADD|MT8112 Disable logging for interface
+add new command "no logging event link-status" on port and "no logging event link-status global"
+
+7.0.3.5(R0241.0280)
+FIX|MT8027 OID for adding\deleting MAC to port-security doesn't work in access mode
+
+7.0.3.5(R0241.0278)
+FIX|MT8022 skb leaking caused by double tagged ipv6 packets
+
+7.0.3.5(R0241.0276)
+FIX|MT7994 Uptime info error in show version
+
+7.0.3.5(R0241.0275)
+ADD|MT7983 ADD snmp oids .1.3.6.1.4.1.40418.7.100.30.3.1.4.x , .1.3.6.1.4.1.40418.7.100.30.3.1.3.x for get sfp module's vendor and SN
+ADD|MT7984 ADD command show ip dhcp-client 
+ADD|MT7982 ADD command ip igmp snooping cos x
+
+7.0.3.5(R0241.0273)
+ADD|MT7794 add command "archive running-config"
+
+7.0.3.5(R0241.0270)
+FIX|MT7944 skb leaking caused by double tagged arp packets
+
+7.0.3.5(R0241.0267)
+ADD|dedicated radius-server for IGMP Authentication
+ADD|MT7862 dhcp option82 remote-id custom format
+
+7.0.3.5(R0241.0264)
+FIX|MT7825 snmp-server failure due to frequent link flaps
+
+7.0.3.5(R0241.0260)
+FIX|MT7738 dhcp snooping inspects packet structure in every vlan
+
+7.0.3.5(R0241.0258)
+FIX|MT7715 LLDP ManAddrOID syntax
+
+7.0.3.5(R0241.0252)
+ADD|MT7441 LLDP data values throught SNMP, ADD new command 'lldp response standard | private'
+
+7.0.3.5(R0241.0246)
+FIX|MT7557 the port with loopguard remains locked after the ring is broken
+
+7.0.3.5(R0241.0243)
+ADD|MT7461 Autoprovisioning fix (add option 60 in DHCP request with vendor (VendNameBr) and model identidier (SwitchName) and ask for options 66, 67, 150 in option 55 - parameters request list)
+ADD|MT7466 ipv6 link-local address as IPv6 gateway
+
+7.0.3.5(R0241.0240)
+ADD|MT7471 support of LLDP dot3 TLV: link aggregation and Maximum frame size
+
+7.0.3.5(R0241.0238)
+ADD|MT7463 Static IGMP groups, configured on interface should be counted in igmpgroup limitation on port
+
+7.0.3.5(R0241.0236)
+FIX|MT7491 memory leak issue
+
+7.0.3.5(R0241.0235)
+FIX|MT7528 can't set RSA password length in SSH
+
+7.0.3.5(R0241.0234)
+ADD|MT7471 support of LLDP dot3 TLV
+
+7.0.3.5(R0241.0223)
+FIX|MT7395 receive LLDP ipv6 and ipv4 management address, it did not show any management address
+
+7.0.3.5(R0241.0221)
+FIX|MT7389 LLDP don't accept "Management address OID" from neighbor
+FIX|MT7390 LLDP Local Management address OID not available 
+
+7.0.3.5(R0241.0218)
+FIX|MT7381 1.3.6.1.2.1.10.7.2.1.19 (dot3StatsDuplexStatus) always return 2
+
+7.0.3.5(R0241.0217)
+FIX|MT7373 dot1x port-based singlemode
+
+7.0.3.5(R0241.0215)
+FIX|MT7352 dhcp snooping trust issue
+
+7.0.3.5(R0241.0211)
+FIX|MT7203 hangup after "used skb data reach" messages
+
+7.0.3.5(R0241.0205)
+FIX|MT7176 igmp authentification forward-first drops first IGMPv3 report
+
+7.0.3.5(R0241.0202)
+FIX|MT7161 dhcp-offer broadcast 
+ADD|snmp OID for DC voltage
+
+7.0.3.5(R0241.0200)
+FIX|MT7152 snmp config
+ADD|show logging alias for show logging buffered level warning
+ADD|new command show interface eth 1/0/x statistics
+
+7.0.3.5(R0241.0199)
+FIX|MT7142 "sh transceiver" issues on hardware version 2.0.1
+
+7.0.3.5(R0241.0197)
+FIX|MT7110 DDMI OID returns alphabetical symbols
+
+7.0.3.5(R0241.0179)
+FIX|RDM49869 some problems when format flash on factory production line
+
+7.0.3.5(R0241.0176)
+FIX|MT5810 ctr+c cause telnet break 
+
+7.0.3.5(R0241.0172)
+ADD|MT6724 privilege {context} level {level} all
+
+7.0.3.5(R0241.0171)
+ADD|MT6795 show bandwidth control
+
+7.0.3.5(R0241.0169)
+FIX|MT6775 DHCP packets with zero length option 252 dropped by DHCP snooping
+
+7.0.3.5(R0241.0168)
+FIX|MT6677 loopback-detection on trunk ports causes high CPU utilization
+
+7.0.3.5(R0241.0166)
+FIX|MT6716 wrong stp status on port with specific SFP tranceivers
+
+7.0.3.5(R0241.0164)
+ADD|customized subscriber ID for dhcp relay
+
+7.0.3.5(R0241.0163)
+ADD|SNMP enhancements
+
+7.0.3.5(R0241.0158)
+FIX|MT6524 first igmp report suppressed by igmp authentication
+
+7.0.3.5(R0241.0155)
+FIX|MT6565 command via ssh
+
+7.0.3.5(R0241.0153)
+FIX|MT6512 igmp snooping config display issue
+
+7.0.3.5(R0241.0151)
+FIX|MT6505 AM drops valid packets
+FIX|MT6498 snmpv3 walk issue
+
+7.0.3.5(R0241.0145)
+FIX|MT6394 savi issue
+
+7.0.3.5(R0241.0142)
+FIX|MT6337 IGMP snooping issue
+
+7.0.3.5(R0241.0141)
+FIX|MT6273 Autoprovisioning 
+
+7.0.3.5(R0241.0140)
+FIX|MT6359 QoS malfunction	
+
+7.0.3.5(R0241.0139)
+FIX|MT6321 ip multicast destination-control 0.0.0.0/0
+
+7.0.3.5(R0241.0136)
+FIX|MT6297 delay between SNMP responses
+
+7.0.3.5(R0241.0134)
+FIX|MT6266 dhcp-client continue to send DHCPREQUEST without DHCPACK
+
+7.0.3.5(R0241.0133)
+FIX|Power status log and trap
+
+7.0.3.5(R0241.0131)
+ADD|0006220 rate-violation modify threshold as 10pps
+
+7.0.3.5(R0241.0129)
+FIX|MT6034 "ip arp inspection trust" on port-channel interface
+
+7.0.3.5(R0241.0127)
+FIX|MT6032 snmpwalk for OID portMacCountLimit leads to high CPU usage
+
+7.0.3.5(R0241.0126)
+FIX|MT5909 sflow sampled frames error
+
+7.0.3.5(R0241.0124)
+ADD|SNMP ERPS support
+
+7.0.3.5(R0241.0123)
+FIX|MT5930 Switch doesn't remark DSCP value via service-policy
+
+7.0.3.5(R0241.0122)
+FIX|MT5889 mls qos queue algorithm wrr issue
+
+7.0.3.5(R0241.0120)
+ADD|MT5869 Special Opt 82 subscriber ID format
+
+7.0.3.5(R0241.0118)
+FIX|MT5828 IP ACL block ARP traffic
+
+7.0.3.5(R0241.0117)
+ADD | RADIUS Authentication Client MIB support
+
+7.0.3.5(R0241.0114)
+FIX|MT5784 snmp-server group ACL issue
+
+7.0.3.5(R0241.0110)
+FIX|MT5762 crashes after applying command "spanning-tree tc-guard " on port
+
+7.0.3.5(R0241.0108)
+FIX|MT5651 reboot after overflow mac-address table
+
+7.0.3.5(R0241.0107)
+FIX|MT5647 SNMPv3 AES issue
+
+7.0.3.5(R0241.0104)
+FIX|MT5514 MTU on traffic to CPU issue 
+
+7.0.3.5(R0241.0102)
+ADD|MT5302 ip dhcp snooping bindig blocked feature
+
+7.0.3.5(R0241.0101)
+FIX|MT5518 debugging infos in show running via ssh
+
+7.0.3.5(R0241.0099)
+FIX|MT5366 dhcp-relay option 82 subscriber-id format hex issue
+FIX|MT5380 High CPU load Port-security+Opt. 82
+
+7.0.3.5(R0241.0098)
+FIX|MT5253 Getting FDB via snmp with error 	
+
+7.0.3.5(R0241.0097)
+FIX|MT5245 mac-address collision issue
+
+7.0.3.5(R0241.0096)
+ADD|MT5262 ADD OIDs for swtichport trunk allowed vlan add/remove/except/addall
+
+7.0.3.5(R0241.0094)
+FIX|MT5175 incorrect admin status of the port in snmp trap
+FIX|MT5181 show cpu usage	
+
+7.0.3.5(R0241.0093)
+FIX|MT5162 DHCP snooping binding user-control issue
+FIX|MT5173 Deleting mac-address from port-security port via SNMP
+
+7.0.3.5(R0241.0092)
+FIX|MT5108 High cpu usage when getting info from newPortSecurityTable via SNMP
+
+7.0.3.5(R0241.0091)
+FIX|MT5115 dhcp snooping binding via SNMP issue 
+
+7.0.3.5(R0241.0089)
+ADD|MT5116 show lldp neighbors brief
+
+7.0.3.5(R0241.0087)
+ADD|MT4761 add mac-address info in logs for anti-arp scan 
+
+7.0.3.5(R0241.0085)
+ADD|MT5022 dying gasp and EFM 
+FIX|MT5103  Abort errors on port statistics 
+
+7.0.3.5(R0241.0083)
+ADD|MT4669 static route
+
+7.0.3.5(R0241.0081)
+FIX|MT4930 Send Dying GASP with VID to access port 
+FIX|MT4941 auto-config
+
+7.0.3.5(R0241.0079)
+FIX|MT5004 dhcp-snooping binding problem
+
+7.0.3.5(R0241.0077)
+FIX|MT4941 auto-config 
+
+7.0.3.5(R0241.0076)
+ADD|MT4898 SNMP Trap and OID (.1.3.6.1.4.1.40418.7.100.1.23.2.0 ) for power monitoring
+
+7.0.3.5(R0241.0074)
+FIX|MT4847 MVR and IGMP snooping problem
+
+7.0.3.5(R0241.0069)
+ADD|MT4788 auto config
+
+7.0.3.5(R0241.0067)
+FIX|MT4783 can't work with other vendor's sfp module
